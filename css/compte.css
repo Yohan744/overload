@@ -1,0 +1,93 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: linear-gradient(#FCA311, #FDB541);
+}
+
+.titre{
+	position: relative;
+	top: 2vh;
+	height: 12vh;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5vh;
+}
+h1{
+	color: #f0f0f0;
+	font-size: 15vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.options{
+	position: relative;
+	height: 85%;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.options a{
+	text-decoration: none;
+	color: #545e68;
+}
+
+.retour, .parametres, .securite, .commandes, .deconnexion{
+	position: relative;
+	height: 9vh;
+	width: 25vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4vh;
+	text-align: center;
+	border: none;
+	border-radius: 5vh;
+	background-color: #f0f0f0;
+	color: #0D1B2A;
+	margin-top: 3vh;
+}
+
+.retour:hover, .parametres:hover, .securite:hover, .commandes:hover, .deconnexion:hover{
+	transform: scale(1.1,1.1);
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+	background-color: #FCA311;
+}
+
+.retour:focus, .parametres:focus, .securite:focus, .commandes:focus, .deconnexion:focus{
+	background-color: #FDB541;
+	outline: none;
+}
+
+@media only screen and (max-device-width: 800px) {
+	h1{
+		font-size: 7vh;
+	}
+
+	.retour, .parametres, .securite, .commandes, .deconnexion{
+		height: 9vh;
+		width: 70vw;
+		font-size: 3vh;
+	}
+}
+
+@media only screen and (max-device-width: 450px) {
+
+	h1{
+		font-size: 6vh;
+	}
+
+	.retour, .parametres, .securite, .commandes, .deconnexion{
+		height: 9vh;
+		width: 60vw;
+		font-size: 3vh;
+	}
+}
